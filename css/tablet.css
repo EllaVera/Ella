@@ -1,0 +1,85 @@
+/* 
+ * SIDHUVUD 
+ */
+
+
+/* 
+ * SIDINNEHÅLL
+ */
+/* Products */
+.products {}
+.products.services .grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/** Contact Section **/
+.contact {}
+
+.contact .grid {
+    grid-template-columns: 1fr 1fr;
+} 
+
+/** CTA Section **/
+.contact-cta .container {
+}
+
+.contact-cta form {
+    flex-direction: row;
+}
+.contact-cta input {
+    margin: 1rem;
+}
+.services > div:nth-child(1) {
+    grid-template-columns: auto auto;
+   }
+/* 
+ * SIDFOT
+ */
+
+
+/* 
+ * HJÄLPKLASSER
+ */
+.container {
+    max-width: var(--tablet-container);
+}
+/*
+.row {}
+.row::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.column {
+    float: left;
+    width: 100%;
+} 
+*/
+
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+.w25 {
+    max-width: 25%;
+}
+.w33 {
+    max-width: calc( 100%/3 );
+}
+.w40 {
+    max-width: 40%;
+}
+.w50 {
+    max-width: 50%;
+}
+.w60 {
+    max-width: 60%;
+}
+.w67 {
+    max-width: calc( (100%/3) * 2);
+}
+.w75 {
+    max-width: 75%;
+}
