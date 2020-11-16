@@ -1,0 +1,235 @@
+/* foundation */
+
+
+/* sätt variabler */
+:root {
+    /* brytpunkter */
+    --tablet-breakpoint: 768px;
+    --laptop-breakpoint: 960px;
+    --desktop-breakpoint: 1200px;
+    /* storlek container */
+    --tablet-container: 720px;
+    --laptop-container: 920px;
+    --desktop-container: 1140px;
+    /* färger */
+    --primary-color: rgb(125, 214, 137);
+    --secondary-color: rgb(73, 99, 73);
+    /* typsnitt */
+    --text-font: 'Montserrat', sans-serif;
+    --heading-font: 'Merriweather', serif;
+}
+
+/* Nollställ alla element */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+ /* base */
+
+ html {
+     font-size: 16px;
+ }
+
+ body   { 
+     font-size: 1rem;
+     line-height: 1.5;
+     font-family: var(--text-font);
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+/*rubriker*/
+
+h1 {
+
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+    font-family: var(--heading-font);
+}
+h2 {
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    font-family: var(--heading-font);
+}
+h3 {
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    font-family: var(--heading-font);
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-widht: 800px) {
+    img {
+        width: 25%;
+    }
+}
+
+p  {
+    margin-bottom: 1rem;
+}
+    
+ul {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+
+    /* projekt */
+
+    /* webbsidans layout */
+
+   .site {}
+   .site-header {
+        background-color: rgba(98, 223, 53, 0.1);
+   }
+.site-header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+   .logo {
+       max-width: 120px;
+
+   }
+
+   .site-navigation {
+       text-align: center;
+   }
+    .site-navigation a {
+       display: inline-block;
+       padding: 10px 20px;
+       margin: 0 10px;
+       background-color: rgba(0,225,0,0, 0.6);
+       color: #579116;
+       text-decoration: none;
+      }
+.site-navigation a.active {
+    background-color: #579116;
+       color:#fff;
+}
+      .site-navigation a:hover {
+          background-color: rgba(15, 187, 24, 0.6);
+          color: #fff;
+      }
+    .site-main {
+       background-color: rgba(0,225,0, 0.1);
+   }
+    .site-footer {
+       background-color: rgba(0,0,225, 0.1);
+       padding: 60px 0;
+   }
+
+   .site-footer .container {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+   }
+
+   .about {
+       grid-column: 1 / span 2;
+   }
+   .social-links ul {
+       display:flex;
+       margin:0;
+   }
+   .social-links i{
+       font-size: 2rem;
+
+   }
+   .section {
+       padding: 60px 0;
+   }
+
+   .hero {
+       background-image: url(../images/kyckling-sallad-kikartor-avokado-quinoa-980x515-c.jpg);
+       background-size: cover;
+       background-position: center center;
+       height: 90vh;
+   }
+
+.hero h1 {
+    position: relative;
+    top: 40%;
+    left: 30%;
+}
+
+    /* hjälp-klasser */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .row {
+        margin: 0 -20px;
+    }
+    .row::before,
+    .row::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+    .col {
+        float: left;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .services > div:nth-child(1) {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+       }
+       .service {
+           display:flex;
+           flex-direction:column;
+           justify-content: space-between;
+           margin-bottom: 40px;
+       }
+       .service img {
+           min-height: 250px;
+           object-fit: cover;
+           object-position: center;
+       }
+       
+
+    /* tablet */
+@media (min-width: 800px) {
+    .col  {
+        width: 33%;
+    }
+    .w40 {
+        width: 40%;
+    }
+    .w60 {
+        width: 60%;
+    }
+    .col  {
+        padding: 20px;
+  }
+ }
+
+    /* desktop */
+@media (min-width: 1000px) {
+  .col  {
+      width: 25%;
+  }
+  .w40 {
+      width: 40%;
+  }
+  .w60 {
+      width: 60%;
+  }
+}

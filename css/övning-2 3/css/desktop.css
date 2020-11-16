@@ -1,0 +1,28 @@
+/* 
+ * SIDHUVUD 
+ */
+
+
+/* 
+ * SIDINNEHÅLL
+ */
+
+/* Products */
+.products {}
+.products.services .grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* 
+ * SIDFOT
+ */
+
+
+/* 
+ * HJÄLPKLASSER
+ */
+.container {
+    /* margin: 0 auto; - denna egenskap/regel satte vi i main.css */
+    max-width: var(--desktop-container);
+}
